@@ -5,17 +5,12 @@ html {
 }
 
 body {
-  background-color: #0f172a; /* slate-900 */
-  color: #f8fafc; /* slate-50 */
+  background-color: #ffffff;
+  color: #0f172a;
 }
 
-/* Custom glow effects for premium feel */
 .glow-effect {
-  box-shadow: 0 0 20px rgba(139, 92, 246, 0.4);
-}
-
-.glow-text {
-  text-shadow: 0 0 15px rgba(6, 182, 212, 0.6);
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.25);
 }
 
 .card-hover {
@@ -23,18 +18,18 @@ body {
 }
 
 .card-hover:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px -10px rgba(139, 92, 246, 0.3);
-  border-color: rgba(139, 92, 246, 0.5);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -12px rgba(99, 102, 241, 0.2);
 }
+
 /* Custom Prose (Markdown) Styling */
 .prose-custom {
-  color: #cbd5e1; /* text-slate-300 */
+  color: #334155;
   line-height: 1.8;
   font-size: 1.125rem;
 }
 .prose-custom h1, .prose-custom h2, .prose-custom h3, .prose-custom h4 {
-  color: #f8fafc; /* text-slate-50 */
+  color: #0f172a;
   font-weight: 700;
   margin-top: 2.5em;
   margin-bottom: 1em;
@@ -43,12 +38,12 @@ body {
 .prose-custom h3 { font-size: 1.5rem; }
 .prose-custom p { margin-bottom: 1.5em; }
 .prose-custom a {
-  color: #22d3ee; /* text-cyan-400 */
+  color: #6366f1;
   text-decoration: underline;
-  text-decoration-color: rgba(34, 211, 238, 0.4);
+  text-decoration-color: rgba(99, 102, 241, 0.4);
   text-underline-offset: 4px;
 }
-.prose-custom a:hover { text-decoration-color: #22d3ee; }
+.prose-custom a:hover { text-decoration-color: #6366f1; }
 .prose-custom ul {
   list-style-type: disc;
   padding-left: 1.5em;
@@ -61,29 +56,28 @@ body {
 }
 .prose-custom li { margin-bottom: 0.5em; }
 .prose-custom blockquote {
-  border-left: 4px solid #8b5cf6; /* violet-500 */
-  padding-left: 1.5em;
-  font-style: italic;
-  color: #94a3b8; /* slate-400 */
-  margin: 2em 0;
-  background: rgba(255, 255, 255, 0.02);
+  border-left: 4px solid #6366f1;
   padding: 1.5em;
+  font-style: italic;
+  color: #64748b;
+  margin: 2em 0;
+  background: #f8f9ff;
   border-radius: 0 0.5rem 0.5rem 0;
 }
-.prose-custom strong { color: #f8fafc; font-weight: 600; }
+.prose-custom strong { color: #0f172a; font-weight: 600; }
 .prose-custom code {
-  background: #1e293b; /* slate-800 */
+  background: #f1f5f9;
   padding: 0.2em 0.4em;
   border-radius: 0.25rem;
   font-size: 0.875em;
-  color: #38bdf8; /* sky-400 */
+  color: #6366f1;
 }
 .prose-custom pre {
-  background: #0f172a;
+  background: #f8fafc;
   padding: 1.5em;
   border-radius: 0.5rem;
   overflow-x: auto;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid #e2e8f0;
   margin-bottom: 1.5em;
 }
 .prose-custom pre code {
