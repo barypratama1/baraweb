@@ -1,0 +1,49 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+
+export async function getStaticPaths() {
+  const blogEntries = await getCollection('blog');
+  return blogEntries.map(entry => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<Layout title={`${entry.data.title} | NexusTech Blog`}>
+  <Navbar />
+  
+  <main class="pt-32 pb-24 bg-slate-900 min-h-screen">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <a href="/blog" class="inline-flex items-center text-cyan-400 hover:text-cyan-300 transition-colors mb-8 font-medium">
+        <svg class="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+        Kembali ke Blog
+      </a>
+      
+      <header class="mb-12 border-b border-white/10 pb-8">
+        <div class="flex items-center gap-4 text-sm text-slate-400 mb-6">
+          <time datetime={entry.data.pubDate.toISOString()}>
+            {entry.data.pubDate.toLocaleDateString('id-ID', { year: 'numeric', month: 'long', day: 'numeric' })}
+          </time>
+          <span>&bull;</span>
+          <span class="text-violet-400">{entry.data.author}</span>
+        </div>
+        <h1 class="text-3xl md:text-5xl font-bold text-white leading-tight">{entry.data.title}</h1>
+      </header>
+
+      <article class="prose-custom">
+        <Content />
+      </article>
+
+    </div>
+  </main>
+  
+  <Footer />
+</Layout>
