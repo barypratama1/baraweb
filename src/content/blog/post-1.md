@@ -21,4 +21,4 @@ Sistem rekomendasi berbasis AI memastikan pelanggan selalu mendapatkan penawaran
 
 > "AI bukanlah pengganti manusia, melainkan *amplifier* untuk potensi manusia."
 
-Kami di **NexusTech** selalu mengintegrasikan kapabilitas AI terkini dalam setiap solusi perangkat lunak yang kami rancang. Hubungi kami untuk mengetahui bagaimana AI dapat diterapkan pada bisnis Anda hari ini.
+Kami di **Bara Digital Kreasi** selalu mengintegrasikan kapabilitas AI terkini dalam setiap solusi perangkat lunak yang kami rancang. Hubungi kami untuk mengetahui bagaimana AI dapat diterapkan pada bisnis Anda hari ini.
