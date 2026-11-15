@@ -4,25 +4,25 @@ const services = [
     title: "Pengembangan Web & Aplikasi",
     desc: "Aplikasi kustom, skalabel, dan aman yang dirancang untuk performa tinggi dengan teknologi terkini.",
     icon: "M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4",
-    color: "text-indigo-600",
-    bg: "bg-indigo-50",
-    border: "border-indigo-100",
+    color: "text-[#1a4689]",
+    bg: "bg-[#1a4689]/5",
+    border: "border-[#1a4689]/15",
   },
   {
     title: "IT Consulting",
     desc: "Memberikan panduan strategis dan solusi teknologi yang tepat untuk mengoptimalkan operasional serta mempercepat transformasi digital bisnis Anda.",
     icon: "M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z",
-    color: "text-violet-600",
-    bg: "bg-violet-50",
-    border: "border-violet-100",
+    color: "text-[#b14a4e]",
+    bg: "bg-[#b14a4e]/5",
+    border: "border-[#b14a4e]/15",
   },
   {
     title: "AI & Machine Learning",
     desc: "Solusi cerdas berbasis data untuk otomatisasi proses bisnis dan analisis prediktif yang akurat.",
     icon: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z",
-    color: "text-purple-600",
-    bg: "bg-purple-50",
-    border: "border-purple-100",
+    color: "text-[#f68c2c]",
+    bg: "bg-[#f68c2c]/10",
+    border: "border-[#f68c2c]/20",
   },
 ];
 ---
@@ -32,7 +32,7 @@ const services = [
     <div class="text-center mb-16">
       <h2 class="text-3xl md:text-4xl font-bold mb-4 text-slate-900">
         Layanan <span
-          class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-500"
+          class="text-transparent bg-clip-text bg-gradient-to-r from-[#1a4689] via-[#d64a35] to-[#f68c2c]"
           >Unggulan</span
         > Kami
       </h2>
@@ -48,7 +48,7 @@ const services = [
           <div
             class={`bg-white border ${service.border} p-8 rounded-3xl card-hover group relative overflow-hidden shadow-sm hover:shadow-lg`}
           >
-            <div class="absolute inset-0 bg-gradient-to-br from-indigo-50/50 to-violet-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <div class="absolute inset-0 bg-gradient-to-br from-[#1a4689]/[0.03] to-[#f68c2c]/[0.04] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             <div
               class={`w-14 h-14 rounded-2xl ${service.bg} border ${service.border} flex items-center justify-center mb-6 ${service.color}`}
             >

@@ -16,13 +16,13 @@ const { entry } = Astro.props;
 const { Content } = await render(entry);
 ---
 
-<Layout title={`${entry.data.title} | NexusTech Blog`}>
+<Layout title={`${entry.data.title} | Bara Digital Kreasi Blog`}>
   <Navbar />
 
   <main class="pt-32 pb-24 bg-white min-h-screen">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
 
-      <a href="/blog" class="inline-flex items-center text-indigo-600 hover:text-indigo-700 transition-colors mb-8 font-medium">
+      <a href="/blog" class="inline-flex items-center text-[#1a4689] hover:text-[#f68c2c] transition-colors mb-8 font-medium">
         <svg class="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
         Kembali ke Blog
       </a>
@@ -33,7 +33,7 @@ const { Content } = await render(entry);
             {entry.data.pubDate.toLocaleDateString('id-ID', { year: 'numeric', month: 'long', day: 'numeric' })}
           </time>
           <span>&bull;</span>
-          <span class="text-indigo-600">{entry.data.author}</span>
+          <span class="text-[#f68c2c] font-medium">{entry.data.author}</span>
         </div>
         <h1 class="text-3xl md:text-5xl font-bold text-slate-900 leading-tight">{entry.data.title}</h1>
       </header>
